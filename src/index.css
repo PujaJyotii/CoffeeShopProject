@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: url("https://t3.ftcdn.net/jpg/09/21/23/24/360_F_921232453_6zd3Jm1QSnYK13o7B9TQrZJLzjPb2n4C.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}

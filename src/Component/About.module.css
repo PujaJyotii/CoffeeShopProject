@@ -1,0 +1,8 @@
+.card {
+  width: 60%;
+  color: white;
+  margin: 100px auto;
+  border: solid 2px purple;
+  opacity: 0.75;
+  background-color: blueviolet;
+}

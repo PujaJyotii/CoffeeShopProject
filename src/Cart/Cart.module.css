@@ -1,0 +1,72 @@
+.card {
+  background-color: blueviolet;
+  color: white;
+  opacity: 0.75;
+}
+
+.btn {
+  background-color: rgb(26, 2, 49);
+  display: flex;
+  justify-content: end;
+  color: white;
+  border: solid 3px purple;
+}
+
+.btn:hover {
+  background-color: rgb(196, 152, 238);
+  border: solid 3px purple;
+}
+
+.innercard {
+  border: solid 2px purple;
+  background-color: rgb(197, 47, 235);
+  margin: 10px;
+  font-family: cursive;
+  font-weight: bold;
+  padding: 8px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.innerbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  border: solid 2px purple;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn1 {
+  background-color: purple;
+  display: flex;
+  justify-content: end;
+  color: white;
+  border: solid 3px rgb(26, 2, 49);
+}
+
+.btn1:hover {
+  background-color: rgb(196, 152, 238);
+  border: solid 3px purple;
+}
+
+.price {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  font-weight: bold;
+}

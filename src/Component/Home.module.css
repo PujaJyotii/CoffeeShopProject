@@ -1,0 +1,44 @@
+.card {
+  width: 40%;
+  color: white;
+  margin: 100px auto;
+  border: solid 2px purple;
+  opacity: 0.75;
+  background-color: blueviolet;
+}
+
+.btn {
+  background-color: rgb(26, 2, 49);
+  display: flex;
+  justify-content: end;
+  color: white;
+  border: solid 3px purple;
+}
+
+.btn:hover {
+  background-color: rgb(196, 152, 238);
+  border: solid 3px purple;
+}
+
+.innercard {
+  border: solid 2px purple;
+  background-color: rgb(197, 47, 235);
+  margin: 10px;
+  font-family: cursive;
+  font-weight: bold;
+  padding: 8px;
+  margin-left: 10px;
+}
+
+.card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.innerBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

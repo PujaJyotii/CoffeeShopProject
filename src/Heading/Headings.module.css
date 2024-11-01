@@ -1,0 +1,23 @@
+.header {
+  height: 5rem;
+  opacity: 0.75;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgb(107, 24, 185);
+  z-index: 100;
+}
+
+.btn {
+  background-color: rgb(26, 2, 49);
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  color: white;
+  border: solid 3px purple;
+}
+
+.btn:hover {
+  background-color: rgb(196, 152, 238);
+  border: solid 3px purple;
+}
