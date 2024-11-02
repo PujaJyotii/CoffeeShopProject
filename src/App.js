@@ -30,14 +30,15 @@ function App() {
       let arr = [];
       for (let key in data) {
         arr.push({
-          id: key,
           ...data[key],
+          id: key,
         });
       }
       dispatch(ListSliceActions.get(arr));
     }
     getVal();
   }, [dispatch]);
+
   return (
     <div>
       {show && <Cart onShow={showHandler} onHide={hideHandler} />}

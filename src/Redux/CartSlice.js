@@ -11,23 +11,24 @@ const CartSlice = createSlice({
       if (index === -1) {
         state.cart.push(action.payload);
       } else {
-        state.cart[index] = {
-          ...state.cart[index],
-          amount: state.cart[index].amount + 1,
-        };
+        state.cart[index].amount = action.payload.amount;
       }
     },
+
     get(state, action) {
-      state.cart = [...action.payload];
+      state.cart = action.payload;
     },
     increase(state, action) {
       let index = state.cart.findIndex(
         (item) => item.nameV === action.payload.nameV
       );
-      state.cart[index] = {
-        ...state.cart[index],
-        amount: state.cart[index].amount + 1,
-      };
+      let amount = state.cart[index].amount;
+      let val = state.cart[index].val;
+      if (amount !== val)
+        state.cart[index] = {
+          ...state.cart[index],
+          amount: action.payload.amount,
+        };
     },
     decrease(state, action) {
       let index = state.cart.findIndex(
@@ -41,7 +42,7 @@ const CartSlice = createSlice({
       } else {
         state.cart[index] = {
           ...state.cart[index],
-          amount: state.cart[index].amount - 1,
+          amount: action.payload.amount,
         };
       }
     },
